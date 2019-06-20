@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    background: url(../images/houseGrid.jpg) no-repeat;
+    background-size: cover;
+   
+  }
+  
+  .img-logo{
+    widows: 100px;
+    height:50px;
+  }
+  .nav-main{
+    width:100%;
+    background-color:#222;
+    height:70px;
+    color:#fff;
+    
+  }
+  .nav-main .logo{
+    float:left;
+    height:60px;
+    padding:15px 30px;
+    font-size:1.3em;
+    line-height:30px;
+  
+  }
+  .nav-main > ul{
+    margin:0;
+    padding:0;
+    float:left;
+    list-style-type:none;
+  }
+  .nav-main > ul > li{
+    float:left;
+  }
+  .nav-item{
+    display:inline-block;
+    padding: 15px 20px;
+    margin-top:5px;
+    margin-bottom:5px;
+    height:30px;
+    line-height:30px;
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+  }
+  .nav-item:hover{
+    border-bottom:2px solid white;
+    transition: 0.7s ease-in-out;
+  }
+  div.clear{
+    clear: both;
+  }
+  
+  div.login{
+    width:10%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:0;
+    float:right;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    font-size:1.5em;
+    text-transform:uppercase;
+    font-weight:bolder;
+    padding: 5px 5px;
+    color:green;
+    overflow:hidden;
+    line-height: 30px;
+  }
+  .login-link{
+    text-decoration: none;
+  
+  }
+  div.footer-element{
+    background-color:black;
+    width:100%;
+    height:220px;
+    
+  }
+  div.center-element{
+    width:50%;
+    height:200px;
+    text-align:center;
+    margin-top:10%;
+    margin-bottom:10%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color:rgba(22, 2, 22, 0.9);
+    border-radius:5px;
+    color:white;
+    box-shadow: 0 0 5px 5px solid grey;
+    overflow:wrap;
+  }
+  div.center-element > p{
+    font-size:xx-large;
+    font-weight:bolder;
+    text-align:center;
+    padding: 10% 2%;
+  }
+  .shown{
+    display:none;
+  }
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+      background-blend-mode: hue;
+    }
+   .hidden{
+      display:none;
+    }
+    .shown{
+      display:block;
+    }
+   
+  }
+  .footer{
+    width:33.3%;
+    color:white;
+    float:left;
+    padding:2px 5px;
+    text-align:center;
+    margin:auto auto;
+  }
+  
+  div.footer > p{
+    text-align:center;
+    margin-bottom:10px;
+    margin-top:20%;
+    text-transform: uppercase;
+  }
+  
