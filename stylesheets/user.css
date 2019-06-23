@@ -1,0 +1,287 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.7fr 0.7fr 2fr 2fr 1fr 0.2fr 0.1fr;
+    grid-template-areas:
+                    "nav nav nav nav search"
+                    ". welcome-message welcome-message . ."
+                    ". user-info posts-heading posts-heading ."
+                    ". user-info user-posts-container user-posts-container ."
+                    ". user-badge user-posts-container user-posts-container ."
+                    ". . featured-ad . ."
+                    ". . search1 . ."
+                    "footer1 footer1 footer2 footer2 social-media"
+}
+.nav{
+    display:flex;
+    grid-area:nav;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width:auto;
+    
+
+}
+.user-badge{
+    display:grid;
+    grid-area: user-badge;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: black;
+    color:white;
+    text-align:center;
+    margin-bottom:18px;
+}
+.nav-item{
+	display:flex;
+	align-self: center;
+	margin-left:20px;
+	margin-right: 20px;
+    font-weight: bolder;
+    text-transform:uppercase;
+    box-shadow: 10px 10px solid black;
+    background-color:black;
+    color:white;
+    text-decoration:none;
+}
+
+.search{
+    display:flex;
+    flex-direction: row;
+    grid-area:search;
+    background-color:black;
+    color:white;
+    width:auto;
+    
+}
+.search-items{
+    display:flex;
+    align-self: center;
+    font-weight: bolder;
+    text-transform:uppercase;
+    color:white;
+    width:auto;
+    
+}
+.welcome-message{
+    display:grid;
+    grid-area:welcome-message;
+    text-decoration: underline;
+    font-weight:bolder;
+    width:auto;
+    
+}
+.user-info{
+    display:grid;
+    grid-area:user-info;
+    justify-self: center;
+    margin-left:5px;
+    margin-right:5px;
+    width:auto;
+    background-color:black;
+    color:white;
+    
+    
+}
+.posts-heading{
+    display:grid;
+    grid-area:posts-heading;
+    width:auto;
+    
+}
+.user-posts-container{
+    display:grid;
+    grid-area:user-posts-container;
+    width:auto;
+}
+
+.featured-ad{
+    display:grid;
+    grid-area:featured-ad;
+    text-align:center;
+    font-weight:bolder;
+    background-color:grey;
+    width:auto;
+
+}
+.search1{
+    display:grid;
+    grid-area:search1;
+
+}
+.footer1{
+    display:grid;
+    grid-area:footer1;
+    background-color: black;
+    color:white;
+    
+}
+.footer2{
+    display:grid;
+    grid-area:footer2;
+    background-color: black;
+    color: white;
+    justify-content: last baseline;
+
+}
+.social-media{
+    display:grid;
+    grid-area:social-media;
+    background-color:black;
+    color:white;
+    
+
+}
+.user-posts{
+    display:grid;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+                     "personal-posts1 personal-posts2"
+                     "personal-posts3 personal-posts4"
+}
+.personal-posts1{
+    display:grid;
+    grid-area: personal-posts1;
+    width:auto;
+    background-color:lightseagreen;
+    
+    border:2px solid grey;
+}
+.personal-posts2{
+    display:grid;
+    grid-area: personal-posts2;
+    width:auto;
+    background-color:lightseagreen;
+    
+    border:2px solid grey
+}
+.personal-posts3{
+    display:grid;
+    grid-area: personal-posts3;
+    width:auto;
+    background-color:lightseagreen;
+    border:2px solid grey;
+}
+.personal-posts4{
+    display:grid;
+    grid-area: personal-posts4;
+    width:auto;
+    background-color:lightseagreen;
+    border:2px solid grey;
+}
+
+.descriptionP{
+    width:100%;
+    margin:0 0;
+    text-align:center;
+    font-weight:bolder;
+}
+
+.button-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+                ". edit delete ."
+
+  }
+   .edit-post{
+     display:grid;
+     align-self: center;
+     grid-area: "edit";
+     width:auto;
+   }
+   .delete-post{
+    display:grid;
+    grid-area: "delete";
+    width: auto;
+    
+  }
+  .button-edit{
+    
+      margin-bottom:28px;
+      width:120px;
+      height:32px;
+      background:grey;
+      border:none;
+      border-radius:2px;
+      color:#fff;
+      font-family:sans-serif;
+      font-weight:500;
+      text-transform:uppercase;
+      transition:0.5s ease;
+      cursor:pointer;
+  }
+  .button-delete{
+    
+    margin-bottom:28px;
+    width:120px;
+    height:32px;
+    background:grey;
+    border:none;
+    border-radius:2px;
+    color:#fff;
+    font-family:sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    transition:0.5s ease;
+    cursor:pointer;
+} 
+.button-delete:hover{
+  background-color:red;
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.button-edit:hover{
+  background-color:green;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+  transition-duration: 0.5s;
+}
+input[type="submit"],input[type="submit"]{
+    display:block;
+    border:none;
+}
+ .nav-link{
+    text-decoration:none;
+    color:white;
+    background-color:black;
+    border-radius:5px;
+}
+.image{
+    width:auto;
+    height:auto;
+}
+.post-heading{
+    margin-left:0.2em;
+    text-align:center;
+    text-decoration: underline;
+    text-decoration-color:blue;
+    
+}
+.post-button{
+    width:100%;
+    border:none;
+    text-align:center;
+    background-color:lightsalmon;
+    height:100%;
+    cursor:pointer;
+}
+.account-type{
+    width:100%;
+}
+.open-dialog{
+    border:none;
+    margin:3px 0;
+    background-color:lightcoral;
+    cursor:pointer;
+    border-radius:4px;
+    font-weight:bolder;
+    width:100%;
+}
+

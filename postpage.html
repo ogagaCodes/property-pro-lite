@@ -1,0 +1,83 @@
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+               
+         <link rel="stylesheet" href="styleSheets/home.css">
+         <link rel="stylesheet" href="styleSheets/login.css">
+         <title>Property Pro Lite</title>
+     </head>
+     <body>
+        
+            <nav class="nav-main">
+                <div class="logo"><img class="img-logo" src="images/logo.png"></div>
+                <ul>
+                    <li> <a class="nav-item" href="#">Home</a></li>
+                    <li> <a class="nav-item" href="#">contact admin</a></li>
+                    <li class="nav-item">
+                        
+                    </li>
+                </ul>
+                
+            </nav>
+            <main>
+                <div class="form-container">
+                    <h1 class="form-header">NEW POST</h1>
+                    <form class="form" action="/" method="post">
+                        
+                        <div class="form-items form-input">
+                                <label for="poperty[title]">Title</label>
+                                <input type="text" name="property[title]" placeholder="Three/two bedroom">
+                        </div>
+                        <!--for multiple files this will be effected in the back
+                             end javscript but the tag below gives room for that-->
+                        <div class="form-items form-input">
+                                <label for="property[image]">Image URL</label>
+                                <input multiple="multiple" type="text" name="property[image]" placeholder="image">
+                        </div>
+                        <div class="form-items form-input">
+                                <label for="property[description]">Description</label>
+                                <input type="text" name="property[description]" placeholder="describe the property">
+                        </div>
+                        <div class="form-items form-input">
+                                <label for="property[location]">location</label>
+                                <input type="text" name="property[Address]" placeholder="Address">
+                        </div>
+                        <div class="form-items form-input">
+                                <label for="category">RENT</label>
+                                <input type="radio" name="category" value="1">
+                        </div>
+                        <div class="form-items form-input">
+                                <label for="category2">SALE</label>
+                                <input type="radio" name="category" value="1">
+                        </div>
+                        <div class="form-items form-input">
+                                <input type="submit" value="POST">
+                        </div>
+                        <div class="form-items form-input"></div>
+                    </form>
+                </div>
+                
+            </main>
+            
+            <footer>
+                    <div class="footer-element">
+                        <div class="footer">
+                            <p>Reach us at No 7 Lfi Road,<br>Bayeku Lagos</p>
+                        </div>
+                         <div class="footer">
+                            <p>powered by Adjaro Ogaga</p>
+                            </div>
+                        <div class="social-media">        
+                        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                    </div>
+            </footer>
+            
+     </body>
+     <script src="scripts/home.js"></script>
+ 
+ </html>
