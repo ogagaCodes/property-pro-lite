@@ -1,0 +1,134 @@
+.menu, .fill, .user-items-small, .view-small, .make-posts-small, .small-footer{
+    display:none;
+}
+
+@media screen and (max-width: 800px) {
+  body{
+    margin:0;
+    background-color:black;
+    color:white;
+    background-blend-mode:difference;
+  }
+  .featured-ad{background-color:black;}
+  .menu{
+    display:block;
+  }
+   .nav, .user-items, 
+   .personal-posts2, 
+   .personal-posts4, 
+   .search, .view-big, 
+   .social-media, 
+   .footer1, 
+   .footer2, .welcome, .user-badge{
+     display:none;
+   }
+   .fill{
+     display:grid;
+     grid-area: search;
+    background-color: #3498DB;
+        
+   }
+   .user-info{
+     display:grid;
+     grid-area:welcome-message;
+     margin-top:1em;
+     background-color:white;
+   }
+   .small-footer{
+        display:grid;
+        grid-area: search1;
+        background-color: black;
+        color:white;
+        
+      }
+     
+   
+   .user-items-small{
+     display:block;
+     align-self: flex-end;
+     align-content: center;
+     text-align:center;
+     grid-area:posts-heading;
+     margin-top:3em;
+  
+    }
+    .view-small{
+      display:block;
+    }
+    .upload-image{
+      margin-top:2em;
+    }
+    .user-items-content{
+      display:block;
+    }
+   
+   .post-button-small{
+     border:none;
+   }
+   .post-button-small:hover{
+     background-color:blue;
+     cursor: pointer;
+   }
+   .menu{
+     display:grid;
+     grid-area:nav;
+     align-self: stretch;
+     width:100%;
+   }
+   .button-container{
+     align-content: center;
+   }
+   .user-image{
+     align-self: center;
+     width:auto;
+   }
+  
+   .user-image{
+     width:80%;
+     border-radius:50%;
+   }
+   
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+  
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      
+      .dropdown-content a:hover {background-color: #ddd}
+      .show {display:block;}
+      
+}
+
